@@ -5,10 +5,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+//Zeyu
+import javax.swing.JOptionPane;
 
 public class SimpleNotepad extends JFrame {
 
-    private JTextArea textArea;
+    private JTextArea textArea;//文本区域
     private JFileChooser fileChooser;
 
     public SimpleNotepad() {
@@ -25,6 +29,10 @@ public class SimpleNotepad extends JFrame {
         JMenuItem openMenuItem = new JMenuItem("打开");
         JMenuItem saveMenuItem = new JMenuItem("保存");
         JMenuItem exitMenuItem = new JMenuItem("退出");
+        //Zeyu
+        JMenuItem aboutMenuItem = new JMenuItem("About");
+        JMenuItem TimeAndData = new JMenuItem("Time And Data");
+
         JMenu SearchMenu=new JMenu("Search");
         JMenu ViewMenu=new JMenu("View");
         JMenu ManageMenu=new JMenu("Manage");
@@ -73,9 +81,30 @@ public class SimpleNotepad extends JFrame {
             }
         });
 
+        aboutMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null,"Name of member: ZeYu Yang ,GuangHui Pang ,You can contact us at: 111222333");
+                //null表示在屏幕中间显示
+            }
+        });
+        TimeAndData.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String currentText = textArea.getText();//当前的文本
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                String TAD = dateFormat.format(new Date());
+                textArea.setText(TAD + currentText);
+            }
+        });
+
         fileMenu.add(openMenuItem);
         fileMenu.add(saveMenuItem);
         fileMenu.add(exitMenuItem);
+
+        HelpMenu.add(aboutMenuItem);
+
+        ManageMenu.add(TimeAndData);
 
         menuBar.add(fileMenu);
         menuBar.add(SearchMenu);
@@ -83,6 +112,8 @@ public class SimpleNotepad extends JFrame {
         menuBar.add(ManageMenu);
         menuBar.add(HelpMenu);
         setJMenuBar(menuBar);
+        //Zeyu
+        this.setLocationRelativeTo(null);//居中显示
     }
 
     public static void main(String[] args) {
