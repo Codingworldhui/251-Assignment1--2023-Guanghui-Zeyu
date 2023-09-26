@@ -1,0 +1,20 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹©Î²ÿÿÿÿÿ8°ŠÓ­1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™†™ò8°ŠÓ­1
+r	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Û¤Çúÿÿÿÿ8°ŠÓ­1
+r	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßë­÷úÿÿÿÿ8°ŠÓ­1
+E
+java:S1604$"(Make this anonymous inner class a lambda(Äú„ò8±ŠÓ­1
+J
+java:S16048"(Make this anonymous inner class a lambda(ùõæÊøÿÿÿÿ8±ŠÓ­1
+J
+java:S1604G"(Make this anonymous inner class a lambda(„âŒîùÿÿÿÿ8±ŠÓ­1
+E
+java:S1604O"(Make this anonymous inner class a lambda(ãõœ½8±ŠÓ­1
+K
+java:S1604"(Make this anonymous inner class a lambda(Ô¶µÿşÿÿÿÿ8±ŠÓ­1
+i
+java:S2095>"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(¾íÍ8ÀŠÓ­1
+n
+java:S2095*"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¹®Ùœÿÿÿÿÿ8ÀŠÓ­1
+X	java:S125T"<This block of commented-out lines of code should be removed.(œĞ¯ÿ8”¸Ó­1
