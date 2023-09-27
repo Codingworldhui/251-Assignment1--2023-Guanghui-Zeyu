@@ -8,12 +8,40 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 //Zeyu
-import javax.swing.JOptionPane;
+import java.awt.print.PrinterJob;
+import java.awt.print.PageFormat;
+import java.awt.print.Printable;
+import java.awt.print.PrinterException;
 
 public class SimpleNotepad extends JFrame {
 
     private JTextArea textArea;//文本区域
     private JFileChooser fileChooser;
+    public static void Print (String content){
+        PrinterJob printerJob = PrinterJob.getPrinterJob();
+        PageFormat pageFormat = printerJob.defaultPage();
+        Printable printable = new Printable() {
+            public int print(Graphics g, PageFormat pf, int page) throws PrinterException {
+                if (page > 0) {
+                    return NO_SUCH_PAGE;
+                }
+                Graphics2D g2d = (Graphics2D) g;
+                g2d.setFont(new Font("SansSerif", Font.PLAIN, 12));
+                g2d.drawString(content, 100, 100);
+                return PAGE_EXISTS;
+            }
+        };
+
+        printerJob.setPrintable(printable, pageFormat);
+
+        if (printerJob.printDialog()) {
+            try {
+                printerJob.print();
+            } catch (PrinterException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
 
     public SimpleNotepad() {
         setTitle("Text Editor");
@@ -32,6 +60,7 @@ public class SimpleNotepad extends JFrame {
         //Zeyu
         JMenuItem aboutMenuItem = new JMenuItem("About");
         JMenuItem TimeAndData = new JMenuItem("Time And Data");
+        JMenuItem PrintMenuItem = new JMenuItem("Print");
 
         JMenu SearchMenu=new JMenu("Search");
         JMenu ViewMenu=new JMenu("View");
@@ -97,14 +126,24 @@ public class SimpleNotepad extends JFrame {
                 textArea.setText(TAD + currentText);
             }
         });
+        PrintMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String currentText = textArea.getText();
+                Print(currentText);
+            }
+        });
+
 
         fileMenu.add(openMenuItem);
         fileMenu.add(saveMenuItem);
         fileMenu.add(exitMenuItem);
 
+        //Zeyu
         HelpMenu.add(aboutMenuItem);
 
         ManageMenu.add(TimeAndData);
+        ManageMenu.add(PrintMenuItem);
 
         menuBar.add(fileMenu);
         menuBar.add(SearchMenu);
