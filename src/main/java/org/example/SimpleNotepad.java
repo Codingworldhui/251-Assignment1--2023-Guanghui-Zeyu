@@ -10,6 +10,7 @@ public class SimpleNotepad extends JFrame {
 
     private JTextArea textArea;
     private JFileChooser fileChooser;
+    private String originalText = "";
 
     public SimpleNotepad() {
         setTitle("Text Editor");
@@ -27,7 +28,7 @@ public class SimpleNotepad extends JFrame {
         JMenuItem saveMenuItem = new JMenuItem("save");
         JMenuItem exitMenuItem = new JMenuItem("quit");
         JMenu SearchMenu=new JMenu("Search");
-        JMenuItem searchMenuItem=new JMenu("single word search");
+        JMenuItem searchMenuItem=new JMenuItem("single word search");
         JMenu ViewMenu=new JMenu("View");
         JMenu ManageMenu=new JMenu("Manage");
         JMenu HelpMenu=new JMenu("Help");
@@ -70,42 +71,98 @@ public class SimpleNotepad extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
+                if (textArea.getText().equals(originalText)) {
+                    // 文本没有被修改过，直接退出
+                    dispose();
+                } else {
+                    int option = JOptionPane.showConfirmDialog(
+                            null,
+                            "The file has been modified, whether to save it?",
+                            "exit",
+                            JOptionPane.YES_NO_CANCEL_OPTION
+                    );
+                    if (option == JOptionPane.YES_OPTION) {
+                        // 保存文件
+                        int returnVal = fileChooser.showSaveDialog(null);
+                        if (returnVal == JFileChooser.APPROVE_OPTION) {
+                            File file = fileChooser.getSelectedFile();
+                            try {
+                                BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+                                bw.write(textArea.getText());
+                                bw.close();
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        }
+                        // 退出程序
+                        dispose();
+                    } else if (option == JOptionPane.NO_OPTION) {
+                        // 不保存文件，直接退出程序
+                        dispose();
+                    }
+                    // 如果用户选择取消，什么也不做，继续编辑
+                }
+
                 SimpleNotepad notepad = new SimpleNotepad();
                 notepad.setVisible(true);
-                int returnVal = fileChooser.showSaveDialog(null);
-                if (returnVal == JFileChooser.APPROVE_OPTION) {
-                    File file = fileChooser.getSelectedFile();
-                    try {
-                        BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-                        bw.write(textArea.getText());
-                        bw.close();
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
+
+            }
+        });
+        searchMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String searchText = JOptionPane.showInputDialog(null, "Please enter the word you are searching for");
+
+                if (searchText != null && !searchText.isEmpty()) {
+                    String text = textArea.getText();
+                    int index = text.indexOf(searchText);
+
+                    if (index != -1) {
+                        textArea.requestFocusInWindow();
+                        textArea.select(index, index + searchText.length());
+                    } else {
+                        JOptionPane.showMessageDialog(null, "can not find this word");
                     }
                 }
-                System.exit(0);
-
             }
         });
 
         exitMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                int returnVal = fileChooser.showSaveDialog(null);
-                if (returnVal == JFileChooser.APPROVE_OPTION) {
-                    File file = fileChooser.getSelectedFile();
-                    try {
-                        BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-                        bw.write(textArea.getText());
-                        bw.close();
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
+                if (textArea.getText().equals(originalText)) {
+                    // 文本没有被修改过，直接退出
+                    dispose();
+                } else {
+                    int option = JOptionPane.showConfirmDialog(
+                            null,
+                            "The file has been modified, whether to save it?",
+                            "exit",
+                            JOptionPane.YES_NO_CANCEL_OPTION
+                    );
+                    if (option == JOptionPane.YES_OPTION) {
+                        // 保存文件
+                        int returnVal = fileChooser.showSaveDialog(null);
+                        if (returnVal == JFileChooser.APPROVE_OPTION) {
+                            File file = fileChooser.getSelectedFile();
+                            try {
+                                BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+                                bw.write(textArea.getText());
+                                bw.close();
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
+                        }
+                        // 退出程序
+                        dispose();
+                    } else if (option == JOptionPane.NO_OPTION) {
+                        // 不保存文件，直接退出程序
+                        dispose();
                     }
+                    // 如果用户选择取消，什么也不做，继续编辑
                 }
-                System.exit(0);
-
             }
-
         });
+
         fileMenu.add(openMenuItem);
         fileMenu.add(saveMenuItem);
         fileMenu.add(exitMenuItem);
