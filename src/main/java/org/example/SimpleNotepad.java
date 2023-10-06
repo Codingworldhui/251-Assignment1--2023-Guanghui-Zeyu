@@ -2,6 +2,7 @@ package org.example;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.datatransfer.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
@@ -61,6 +62,10 @@ public class SimpleNotepad extends JFrame {
         JMenuItem aboutMenuItem = new JMenuItem("About");
         JMenuItem TimeAndData = new JMenuItem("Time And Data");
         JMenuItem PrintMenuItem = new JMenuItem("Print");
+        JMenuItem SelectMenuItem = new JMenuItem("Select");
+        JMenuItem CopyMenuItem = new JMenuItem("Copy");
+        JMenuItem PasteMenuItem = new JMenuItem("Paste");
+        JMenuItem CutMenuItem = new JMenuItem("Cut");
 
         JMenu SearchMenu=new JMenu("Search");
         JMenu ViewMenu=new JMenu("View");
@@ -133,6 +138,52 @@ public class SimpleNotepad extends JFrame {
                 Print(currentText);
             }
         });
+        SelectMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textArea.selectAll();//全选文本内容
+            }
+        });
+        CopyMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedText = textArea.getSelectedText();
+                if (selectedText != null && !selectedText.isEmpty()) {
+                    StringSelection selection = new StringSelection(selectedText);
+                    Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+                    clipboard.setContents(selection, null);
+                }
+            }
+        });
+        PasteMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+                Transferable contents = clipboard.getContents(null);
+                if (contents != null && contents.isDataFlavorSupported(DataFlavor.stringFlavor)) {
+                    try {
+                        String pastedText = (String) contents.getTransferData(DataFlavor.stringFlavor);
+                        textArea.append(pastedText); // 将粘贴的文本追加到文本区域中
+                    } catch (UnsupportedFlavorException | IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+            }
+        });
+
+        CutMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String selectedText = textArea.getSelectedText();
+                if (selectedText != null && !selectedText.isEmpty()) {
+                    Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+                    StringSelection selection = new StringSelection(selectedText);
+                    clipboard.setContents(selection, null);
+                    textArea.replaceSelection(""); // 从文本区域中删除选定的文本
+                }
+
+            }
+        });
 
 
         fileMenu.add(openMenuItem);
@@ -140,6 +191,11 @@ public class SimpleNotepad extends JFrame {
         fileMenu.add(exitMenuItem);
 
         //Zeyu
+        ViewMenu.add(SelectMenuItem);
+        ViewMenu.add(CopyMenuItem);
+        ViewMenu.add(PasteMenuItem);
+        ViewMenu.add(CutMenuItem);
+
         HelpMenu.add(aboutMenuItem);
 
         ManageMenu.add(TimeAndData);
