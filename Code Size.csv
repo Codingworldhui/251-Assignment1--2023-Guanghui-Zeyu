@@ -1,0 +1,26 @@
+Lines of code metrics (2),÷‹»’, 8 10‘¬ 2023 20:17:40 CST
+Method,CLOC,JLOC,LOC,NCLOC,RLOC
+org.example.SimpleNotepad.Print(String),0,0,23,23,5.88%
+org.example.SimpleNotepad.SimpleNotepad(),40,0,330,300,84.40%
+org.example.SimpleNotepad.convertTextToPdf(String),1,0,22,22,5.63%
+org.example.SimpleNotepad.main(String[]),0,0,8,8,2.05%
+
+Class,CLOC,JLOC,LOC
+org.example.SimpleNotepad,42,0,391
+
+Package,CLOC,CLOC(rec),JLOC,JLOC(rec),LOC,LOC(rec),LOCp,LOCp(rec),LOCt,LOCt(rec),NCLOC,NCLOCp,NCLOCp(rec),NCLOCt
+,n/a,43,n/a,n/a,n/a,419,n/a,419,n/a,0,n/a,n/a,387,n/a
+org,n/a,43,n/a,n/a,n/a,419,n/a,419,n/a,0,n/a,n/a,387,n/a
+org.example,0,43,0,0,419,419,419,419,0,0,387,387,387,0
+
+Module,JLOC,L(CSS),L(Groovy),L(HTML),L(J),L(JS),L(JSP),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+assignment1,0,0,0,0,419,0,0,0,43,463,419,0,431,387,0
+
+FileType,LOC,NCLOC
+Java,419,387
+Markdown,1,1
+XML,43,43
+
+Project,CLOC,JLOC,L(CSS),L(Groovy),L(HTML),L(J),L(JS),L(JSP),L(KT),L(XML),LOC,LOCp,LOCt,METH,NCLOC,NCLOCp,NCLOCt
+project,43,0,0,0,0,419,0,0,0,43,463,419,0,4,431,387,0
+

@@ -58,6 +58,12 @@ public class SimpleNotepad extends JFrame {
                     "Conversion Success", JOptionPane.INFORMATION_MESSAGE);
         }
     }
+    public void showMessageDialog(Object any, String anyString) {
+        JOptionPane.showMessageDialog(null,anyString);
+    }
+    public void About(){
+showMessageDialog(null,"Name of member: ZeYu Yang ,GuangHui Pang ,You can contact us at: 111222333");
+    }
    // private JTextArea textArea;//文本区域
    private RSyntaxTextArea textArea;
     private JFileChooser fileChooser;
@@ -251,7 +257,6 @@ public class SimpleNotepad extends JFrame {
             }
         });
         newMenuItem.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (textArea.getText().equals(originalText)) {
@@ -346,11 +351,11 @@ public class SimpleNotepad extends JFrame {
             }
         });
 
+
         aboutMenuItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"Name of member: ZeYu Yang ,GuangHui Pang ,You can contact us at: 111222333");
-                //null表示在屏幕中间显示
+            About();
             }
         });
         TimeAndData.addActionListener(new ActionListener() {
@@ -452,4 +457,6 @@ public class SimpleNotepad extends JFrame {
             }
         });
     }
+
+
 }

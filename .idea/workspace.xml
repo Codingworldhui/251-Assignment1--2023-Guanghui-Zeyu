@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed55aa0c-fd74-40ab-a544-1599c5258207" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SimpleNotepad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SimpleNotepad.java" afterDir="false" />
@@ -13,6 +13,8 @@
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$11.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$14.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$4.class" afterDir="false" />
@@ -109,6 +111,11 @@
       <workItem from="1696755272958" duration="399000" />
       <workItem from="1696755726155" duration="19000" />
       <workItem from="1696755760861" duration="2422000" />
+      <workItem from="1696758271644" duration="4000" />
+      <workItem from="1696758444562" duration="5326000" />
+      <workItem from="1696768408233" duration="1004000" />
+      <workItem from="1696770000907" duration="2044000" />
+      <workItem from="1696772129982" duration="268000" />
     </task>
     <servers />
   </component>
