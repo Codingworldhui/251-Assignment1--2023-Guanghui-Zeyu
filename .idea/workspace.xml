@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed55aa0c-fd74-40ab-a544-1599c5258207" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SimpleNotepad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SimpleNotepad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/SimpleNotepad.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +98,7 @@
       <workItem from="1696768408233" duration="1004000" />
       <workItem from="1696770000907" duration="2044000" />
       <workItem from="1696772129982" duration="268000" />
+      <workItem from="1696774113515" duration="669000" />
     </task>
     <servers />
   </component>

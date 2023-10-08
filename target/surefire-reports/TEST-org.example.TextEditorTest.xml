@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.TextEditorTest" time="1.02" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.TextEditorTest" time="2.231" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CN"/>
     <property name="sun.boot.library.path" value="F:\java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\user123\AppData\Local\Temp\surefire15140357265811801072\surefirebooter-20231008214019675_3.jar C:\Users\user123\AppData\Local\Temp\surefire15140357265811801072 2023-10-08T21-40-16_102-jvmRun1 surefire-20231008214019675_1tmp surefire_0-20231008214019675_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\user123\AppData\Local\Temp\surefire9232571675851843636\surefirebooter-20231008222147854_3.jar C:\Users\user123\AppData\Local\Temp\surefire9232571675851843636 2023-10-08T22-21-47_572-jvmRun1 surefire-20231008222147854_1tmp surefire_0-20231008222147854_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="F:\a河工\159251\Code\Assignment1\251-Assignment1--2023-Guanghui-Zeyu\target\test-classes;F:\a河工\159251\Code\Assignment1\251-Assignment1--2023-Guanghui-Zeyu\target\classes;F:\tool\maven\repository\org\mockito\mockito-core\3.12.4\mockito-core-3.12.4.jar;F:\tool\maven\repository\net\bytebuddy\byte-buddy\1.11.13\byte-buddy-1.11.13.jar;F:\tool\maven\repository\net\bytebuddy\byte-buddy-agent\1.11.13\byte-buddy-agent-1.11.13.jar;F:\tool\maven\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;F:\tool\maven\repository\com\fifesoft\rsyntaxtextarea\3.1.1\rsyntaxtextarea-3.1.1.jar;F:\tool\maven\repository\junit\junit\4.13.1\junit-4.13.1.jar;F:\tool\maven\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;F:\tool\maven\repository\org\odftoolkit\simple-odf\0.6.6\simple-odf-0.6.6.jar;F:\tool\maven\repository\org\odftoolkit\odfdom-java\0.8.7\odfdom-java-0.8.7.jar;F:\tool\maven\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;F:\tool\maven\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;F:\tool\maven\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;F:\tool\maven\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;F:\tool\maven\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\user123\AppData\Local\Temp\surefire15140357265811801072\surefirebooter-20231008214019675_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\user123\AppData\Local\Temp\surefire9232571675851843636\surefirebooter-20231008222147854_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-44"/>
@@ -50,7 +50,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="GBK"/>
-    <property name="java.library.path" value="F:\java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;F:\java\jdk-19\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;F:\mingw64\bin;C:\Program Files\Bandizip\;F:\Matlab\runtime\win64;F:\Matlab\bin;F:\Matlab\polyspace\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\Git\cmd;F:\tool\apache-maven-3.9.4\bin;C:\Users\user123\AppData\Local\Microsoft\WindowsApps;F:\clion\CLion 2021.2.2\bin;F:\qq\Files\QQGameTempest\Hall.57938\;F:\java\IDEA\IntelliJ IDEA 2022.3.2\bin;F:\Microsoft VS Code\bin;."/>
+    <property name="java.library.path" value="F:\java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;F:\java\jdk-19\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;F:\mingw64\bin;C:\Program Files\Bandizip\;F:\Matlab\runtime\win64;F:\Matlab\bin;F:\Matlab\polyspace\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\Git\cmd;F:\tool\apache-maven-3.9.4\bin;C:\Users\user123\AppData\Local\Microsoft\WindowsApps;F:\clion\CLion 2021.2.2\bin;;F:\qq\Files\QQGameTempest\Hall.57938\;F:\java\IDEA\IntelliJ IDEA 2022.3.2\bin;;;F:\Microsoft VS Code\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="GBK"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="testAboutMethod" classname="org.example.TextEditorTest" time="0.981"/>
+  <testcase name="testAboutMethod" classname="org.example.TextEditorTest" time="2.14"/>
 </testsuite>
