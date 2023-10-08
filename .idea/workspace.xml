@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ed55aa0c-fd74-40ab-a544-1599c5258207" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/assignment1-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-10-08T22-21-47_572.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.TextEditorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.TextEditorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.TextEditorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.TextEditorTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +104,7 @@
       <workItem from="1696768408233" duration="1004000" />
       <workItem from="1696770000907" duration="2044000" />
       <workItem from="1696772129982" duration="268000" />
-      <workItem from="1696774113515" duration="669000" />
+      <workItem from="1696774113515" duration="1387000" />
     </task>
     <servers />
   </component>
